@@ -8,6 +8,6 @@ php:
 before_script: 
   - composer install --dev --no-interaction --prefer-source
   - touch ./database/sqlite_testing.sqlite
-  - php artisan migrate --database = sqlite_testing
+  - php artisan migrate --database=sqlite_testing
   
 script: vendor/bin/phpunit
