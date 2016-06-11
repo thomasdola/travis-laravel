@@ -22,7 +22,7 @@ class ArticleRepository
         $article->delete();
     }
 
-    public function edit(Article $article, array $data)
+    public function update(Article $article, array $data)
     {
         $article->update($data);
         return $article;
