@@ -59,7 +59,7 @@ class ArticleRepositoryTest extends TestCase
         $data = ['title' => 'edited title'];
 
         //when
-        $edited = $this->repository->update($article, $data);
+        $edited = $this->repository->edit($article, $data);
 
         //then
         $this->assertEquals('edited title', $edited->title);
